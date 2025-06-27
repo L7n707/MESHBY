@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg.2/</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #800080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #FFFFFF; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255); 
+        }
+        .info {
+            margin-top: 1px;
+            font-size: 1.5em;
+            color: #FFFFFF; 
+            text-shadow: 0px 0px 8px #FFFFFF, 0px 0px 15px #FFFFFF, 0px 0px 25px #FFFFFF; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 10px;
+            font-size: 3em; 
+            color: #FFFFFF; 
+            text-shadow: 0px 0px 8px #FFFFFF, 0px 0px 15px #FFFFFF, 0px 0px 25px #FFFFFF; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+    <div class="text">صلو على النبي </div>
+    </div>
+    <audio autoplay loop>
+        <source src="https://j.top4top.io/m_3465gf4dq1.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="ip-info">
+    <div class="text">discord.gg/2o9 </div>
+    <div class="text">discord.gg/d1f </div>
+    <div class="text">By Mesh <3 </div>
+    </div>
+
+
+    <script>
+         fetch('https://ipinfo.io/')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
